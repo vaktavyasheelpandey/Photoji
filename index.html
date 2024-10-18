@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Snapchat Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>3D Snapchat Clone</h1>
+    </header>
+
+    <section id="camera-section">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <div id="filters">
+            <button onclick="add3DFilter()">Add 3D Filter</button>
+            <button onclick="capturePhoto()">Capture Photo</button>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h2>Captured Photos</h2>
+        <div id="photo-gallery"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
